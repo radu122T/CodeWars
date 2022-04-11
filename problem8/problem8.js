@@ -3,8 +3,10 @@
 // Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.
 
 function isPangram(string){
-    let lettersInString=new Set(string.match(/[a-zA-Z]/g))
-    if (lettersInString.size === 27)
+    let newString= string.toLowerCase()
+    let lettersInString=new Set(newString.match(/[a-z]/g))
+    console.log(lettersInString)
+    if (lettersInString.size === 26)
         return true
     else 
         return false
