@@ -20,7 +20,6 @@
 
 function isValidIP(str) {
     let k = str.split(".")
-    console.log(k)
     if(!(k.length === 4))
         return false
     else
