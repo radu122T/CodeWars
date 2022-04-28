@@ -16,7 +16,7 @@ function generateHashtag (str) {
     for (i=0; i<newArr.length; i++)
         arrWithWords.push(newArr[i].charAt(0).toUpperCase()+newArr[i].slice(1))
     finalWord =arrWithWords.join("")
-    if (finalWord.length>139 || finalWord.length ===  )
+    if (finalWord.length>139 || finalWord.length === 0)
         return false
     else 
         return "#" + finalWord

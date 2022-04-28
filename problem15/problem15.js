@@ -64,4 +64,4 @@ function recArr(arr) {
     return [arr[0][0]]
 }
 
-console.log(getPINs('8'))
+console.log(getPINs('353'))

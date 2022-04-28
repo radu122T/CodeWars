@@ -7,7 +7,6 @@
 function findNextSquare(sq) {
     let k = sq+1
     if (Math.sqrt(sq)%1===0) {
-        
         while (Math.sqrt(k)%1!==0) {
             k++
         }
