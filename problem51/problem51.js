@@ -15,3 +15,5 @@ function removeEveryOther(arr){
   }
 
   console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']))
+
+  //
