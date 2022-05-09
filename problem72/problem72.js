@@ -15,10 +15,10 @@
 
 
 function hamming (n) {
-    var set = new Set();
+    let set = new Set();
     set.add(1);
-    for (var i = 0; i < n - 1; i++) {
-        var currentElem = getMinElemOfSet(set);
+    for (let i = 0; i < n - 1; i++) {
+        let currentElem = getMinElemOfSet(set);
         [currentElem * 2, currentElem * 3, currentElem * 5].forEach(item => set.add(item))
         set.delete(currentElem);
     }
@@ -27,7 +27,7 @@ function hamming (n) {
 
 
 function getMinElemOfSet(set) {
-    var min = Number.MAX_SAFE_INTEGER;
+    let min = Number.MAX_SAFE_INTEGER;
     set.forEach(elem => {if (elem < min) {min = elem;}});
     return min;
 }
