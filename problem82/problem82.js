@@ -4,13 +4,12 @@
 
 
 function missingNo(nums) {
-    let k = nums.sort((a,b)=>a-b)
-    console.log(nums.indexOf(0))
+    let sortedArr = nums.sort((a,b)=>a-b)
+    if (sortedArr.indexOf(0)!=0)
+        return 0
     for(let i=0, j=1; i<100,j<101 ; i++,j++) {
-        if (!(k[i]===k[j]-1) && nums.indexOf(0)>=0)
-            return k[i]+1
-        else
-            return 0
+        if (!(sortedArr[i]===sortedArr[j]-1))
+            return sortedArr[i]+1
     }
     
 }
